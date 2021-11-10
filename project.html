@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html langue="en"></html>
-
+<html lang="en">
 <head>
-    
     <meta charset="UTF-8">
-    <title>Project</title>
-    
-    <body style="background-color: black"></body>
-    <body text="#ffffff" link="#ff0000" vlink="#ff0000" alink="#ff0000">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
 </head>
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn"> Answer 1</button>
+                <button class="btn"> Answer 2</button>
+                <button class="btn"> Answer 3</button>
+                <button class="btn"> Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>  
+    <div class="score">
+<span id="right-answers"></span>
+    </div>
+    
+    <script src="project.js"></script>
 
-<h1>
-    <center>Wilkommen beim Flaggenquiz</center>
-</h1>
 
-<h2> 
-    <center>Wählen Sie den Kontinent aus!
-    <select name="select">
-        <option value="Europa">Europa</option> 
-        <option value="Asien" selected> Asien</option>
-        <option value="Afrika">Afrika</option>
-        <option value="Nordamerika">Nordamerika</option>
-        <option value="Südamerika">Südamerika</option>
-        <option value="Ozeanien">Ozeanien</option>
-        <option value="Alle Kontinente"> Alle Kontinente</option></center>
-    </select>
 
     
-</h2>
-
-<h2>
     
-    <center>Wählen Sie die Schwierigkeit aus!
-    <select name="select">
-        <option value="einfach">einfach</option> 
-        <option value="mittel" selected>mittel</option>
-        <option value="schwierig">schwierig</option>
-        <option value="Experte">Experte</option></center>
-
-    
-    </select>
-
-</h2>
-
+</body>
+</html>
 
 
