@@ -67,10 +67,10 @@ function selectAnswer(e) {
     Array.from(answerButtonElement.children).forEach((button) => {
         setStatusClass(button)
     })
-    if (shuffledQuestions.leght > currectQuestionIndex + 1) {
+    if (shuffledQuestions.length > currectQuestionIndex + 1) {
         nextButton.classList.remove("hide")
     } else {
-        startButton.innerText = "restart"
+        startButton.innerText = "Restart"
         startButton.classList.remove("hide")
     }
     if (selectedButton.dataset.correct == "true") {
@@ -103,9 +103,6 @@ const questions = [
             { text: "2", correct: true },
             { text: "3", correct: false },
             { text: "4", correct: false },
-
-
-
         ],
 
     },
@@ -116,12 +113,29 @@ const questions = [
             { text: "2", correct: false },
             { text: "3", correct: false },
             { text: "4", correct: false },
-
-
-
         ],
 
     },
+    {
+        question: "Was gibt 32/4?",
+        answer: [
+            { text: "2", correct: false },
+            { text: "16", correct: false },
+            { text: "8", correct: true },
+            { text: "4", correct: false },
+        ],
+
+    },
+    {
+        question: "Was gibt 8*8?",
+        answer: [
+            { text: "16", correct: false },
+            { text: "32", correct: false },
+            { text: "64", correct: true },
+            { text: "4", correct: false },
+        ],
+
+    }
 
 ]
 
