@@ -38,60 +38,39 @@
 			const c = getHypotenuse(a, b)
 			hypotenuseOutput.textContent = c
 		}
-
-
 	</script>
-</body>
+</body> 
 </html>
+	
 
-<head>
-	<meta charset="UTF-8">
-	<title>Javascript</title>
-	<link rel="stylesheet" href="https://gymburgdorf-ef23.github.io/helpers/basicstyle.css"></link>
-	<style>
-		input, button, .output {padding: 0.4em; border-radius: 5px; font-family: monospace; margin: 0.5em 0; font-size: 1.4em;}
-		input {background-color: #bbe; }
-		.output {background-color: #ada;}
-	</style>
-	<script src="43_functions.js"></script>
-</head>
-<body>
-	<h1>Javascript - DOM Manipulation</h1>
 
 	<div class="average">
-		<h2>Get average</h2>
+		<h2>Get Average</h2>
 		<div>
 			<input class="a" placeholder="a" type="number">
 			<input class="b" placeholder="b" type="number">
-			<button>Get average</button>
+			<input class="c" placeholder="c" type="number">
+			<button>Get Average</button>
 			<div class="output">&nbsp;</div>
 		</div>
 	</div>
 
-
-	<script>
-
-		const averageButton = document.querySelector(".average button")
-		const averageOutput = document.querySelector(".average .output")
-
-		averageButton.addEventListener("click", showAverage)
-
-		function averageButton(){
-			
-		    const a = Number(document.querySelector(".average input.a").value)
-			const b = Number(document.querySelector(".average input.b").value)
-			const c = getAverage(a, b)
-			AverageOutput.textContent = c
-			
-	    
-		
-		
-			const oneLesson = getSeconds(0, 45, 0) // should return 2700
-
 	
 
+	<script>
+		const averageButton = document.querySelector(".average button")
+		const averageOutput = document.querySelector(".average .output")
+		
+		
+		function showAverage() {
+			const a = Number(document.querySelector(".average input.a").value)
+			const b = Number(document.querySelector(".average input.b").value)
+			const c = Number(document.querySelector(".average input.c").value)
+			const avg = averageOf3(a,b,c)
+			averageOutput.textContent = d 
+		}
+		
 
 	</script>
 </body>
-</html> 
-
+</html>
